@@ -6,9 +6,9 @@
 :: -PSCP
 :: =======
 :: configure the location of the pscp executable
-SET _PSCP=E:\windows\_downloads\35.putty\pscp
+SET _PSCP=C:\_downloads\35.putty\pscp
 
 :: -PUTTY
 :: =======
 :: configure the location of the putty executable
-SET _PUTTY=E:\windows\_downloads\35.putty\putty
+SET _PUTTY=C:\_downloads\35.putty\putty
