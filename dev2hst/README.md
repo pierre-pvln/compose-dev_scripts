@@ -1,4 +1,4 @@
 Currently 2 hosts who have docker installed
-rpi2
-rpi3
+- rpi2
+- rpi3
 
