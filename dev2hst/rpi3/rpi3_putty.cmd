@@ -1,5 +1,5 @@
 SET connectport=22
-SET vps-hostname=raspberrypi3
+SET vps-hostname=192.168.2.11
 SET _putty="C:\Program Files\PuTTY\putty.exe"
 
 %_putty% -ssh -P %connectport% -pw PVeeRPI3 pi@%vps-hostname%
