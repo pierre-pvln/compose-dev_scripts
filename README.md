@@ -1,4 +1,4 @@
-Configs en scripts for development folder for docker
+Configs en scripts for docker on development workstation for various integrations and stacks 
 
 Below folder structure should be present on the host which runs docker:
 ```
