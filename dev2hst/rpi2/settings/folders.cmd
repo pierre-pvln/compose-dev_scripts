@@ -8,6 +8,8 @@
 :: - Do not end folders with \ or /
 :: - sometimes \ is used and sometimes /
 
+SET LOCAL_SECRETS_DIR=E:\multi\docker\compose\secrets\hst\rpi2
+
 :: 
 :: JOOMLA! ARCHIVE FILE(s)
 :: ====================

@@ -41,7 +41,7 @@ CD %PARENT%
 
 :: GET SECRETS
 :: ===========
-CD ..\..\secrets\hst
+CD %LOCAL_SECRETS_DIR%
 IF EXIST user.cmd (
    CALL user.cmd
 ) ELSE (
