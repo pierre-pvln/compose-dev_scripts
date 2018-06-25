@@ -33,12 +33,3 @@ if [ -n "$(git status --porcelain)" ]; then
 else
   git pull origin master
 fi
-
-echo "Running in compose/storage"
-cd /e/multi/docker/compose/storage
-if [ -n "$(git status --porcelain)" ]; then
-  echo "There are changes to handle";
-  exit
-else
-  git pull origin master
-fi
