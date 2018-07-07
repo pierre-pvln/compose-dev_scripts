@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Copying archive files to folder"
 sudo cp * /home/pi/myStorage/voluntas/html
 sudo rm /home/pi/myStorage/voluntas/html/final_copy.sh
