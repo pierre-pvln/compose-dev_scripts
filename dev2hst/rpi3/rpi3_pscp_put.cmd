@@ -6,6 +6,7 @@
 
 @ECHO off
 SETLOCAL ENABLEEXTENSIONS
+CLS
 
 :: BASIC SETTINGS
 :: ==============
@@ -85,15 +86,28 @@ IF %SERVER-HOSTNAME% NEQ localhost (
    SET connectport=2222
 )   
 
-echo %_PSCP% -scp -P %CONNECTPORT% -r -pw %HST_PW% %LOCAL_ARCHIVE_DIR%/ %HST_ID%@%SERVER-HOSTNAME%:%REMOTE_ARCHIVE_DIR%/
+ECHO.
+ECHO *******************
+ECHO %_PSCP% -scp -P %CONNECTPORT% -r -pw %HST_PW% %LOCAL_ARCHIVE_DIR%/ %HST_ID%@%SERVER-HOSTNAME%:%REMOTE_ARCHIVE_DIR%/
+ECHO *******************
 
 :: Transfer archive files to server
 %_PSCP% -scp -P %CONNECTPORT% -r -pw %HST_PW% %LOCAL_ARCHIVE_DIR%/ %HST_ID%@%SERVER-HOSTNAME%:%REMOTE_ARCHIVE_DIR%/
 
 ECHO.
 ECHO *******************
+ECHO %_PSCP% -scp -P %CONNECTPORT% -r -pw %HST_PW% %LOCAL_SCRIPTS_DIR%/ %HST_ID%@%SERVER-HOSTNAME%:%REMOTE_ARCHIVE_DIR%/
+ECHO *******************
+
+:: Transfer script files to server
+%_PSCP% -scp -P %CONNECTPORT% -r -pw %HST_PW% %LOCAL_SCRIPTS_DIR%/ %HST_ID%@%SERVER-HOSTNAME%:%REMOTE_ARCHIVE_DIR%/
+
+ECHO.
+ECHO *******************
 ECHO:
-ECHO Ga naar directory /tmp/archive
+ECHO Go to directory %REMOTE_ARCHIVE_DIR% on remote machine
+ECHO:
+ECHO And start from commandline: sh ./final_copy.sh 
 ECHO:
 ECHO *******************
 GOTO CLEAN_EXIT
