@@ -16,7 +16,7 @@ SET LOCAL_SECRETS_DIR=E:\multi\docker\compose\secrets\hst\rpi3
 ::
 :: Setting folder holding the JOOMLA! archive(s)
 ::
-SET LOCAL_ARCHIVE_DIR=E:\multi\docker\compose\secrets\jpa\ozitdatzo
+SET LOCAL_ARCHIVE_DIR=E:\multi\docker\compose\secrets\jpa\voluntas
 
 :: An intermediate place where PSCP can store the files as it has no direct access to the final location 
 ::
