@@ -83,7 +83,7 @@ ECHO *******************
 IF %SERVER-HOSTNAME% NEQ localhost (
    SET connectport=22
 ) ELSE (
-   SET connectport=2222
+   SET connectport=22
 )   
 
 ECHO.
